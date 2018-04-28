@@ -1,0 +1,95 @@
+/* pages/nav/aa.wxss */
+
+/* .box {
+  animation: aa 2s ease-in forwards;
+}
+
+@keyframes aa {
+  0% {
+    background: blue;
+  }
+
+  100% {
+    background: yellow;
+  }
+} */
+.active{
+  color: yellow;
+}
+.turn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotateX(180deg);
+  z-index: 5;
+}
+
+.turn-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.display {
+  display: none;
+}
+
+.turn-1.animation {
+  transform-origin: top;
+  animation: animation1 0.2s ease-in forwards;
+}
+
+.turn-1.animation2 {
+  transform-origin: top;
+  animation: animation2 0.2s ease-in forwards;
+}
+
+.turn-1.animation3 {
+  transform-origin: bottom;
+  animation: animation3 0.2s ease-in forwards;
+}
+
+.turn-1.animation4 {
+  transform-origin: bottom;
+  animation: animation4 0.2s ease-in forwards;
+}
+
+@keyframes animation1 {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(180deg);
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(180deg);
+  }
+}
+
+@keyframes animation3 {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+
+@keyframes animation4 {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(-180deg);
+  }
+}

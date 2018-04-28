@@ -1,0 +1,42 @@
+/* pages/animate/animate.wxss */
+
+.home {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.home .home_list{
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+.home .home_list .item{
+  height: 200rpx;
+  border: 1px solid #ccc;
+  /* animation:bb .4s linear; */
+  
+}
+.active{
+  /* position: absolute;
+  top: 0; */
+  animation:aa .4s linear forwards;
+}
+ @keyframes  aa{
+        0%{
+            height: 200rpx;
+        }
+        100%{
+            height: 600rpx;
+        }
+    }
+
+    @keyframes  bb{
+        0%{
+            height: 400rpx;
+        }
+        100%{
+            height: 200rpx;
+        }
+    }

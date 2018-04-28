@@ -1,0 +1,8 @@
+<!--pages/animate/animate.wxml-->
+<view class='home'>
+    <view class='home_list'>
+      <view  wx:for='{{homeData}}' class="item {{index==idx?'active':''}}"  bindtap='startAnimate'  wx:key="id" style='background:{{colorArr[index]}}' data-select="{{index}}">
+        {{index}}{{item.name}}
+      </view>
+    </view>
+</view>
